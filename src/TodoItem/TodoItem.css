@@ -1,0 +1,53 @@
+.todo-item{
+    width: 350px;
+    height: 64px;
+    background-color: #FAFAFA;
+    margin: 32px 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-item-text{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 64px;
+}
+.todo-item-text-complete{
+    text-decoration: line-through;
+    color: lightslategray;
+}
+
+.todo-item-check{
+    background-image: url(check-circle.svg);
+    position: absolute;
+    background-size: 100%;
+    left: 24px;
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.todo-item-check-active{
+    position: absolute;
+    left: 24px;
+    background-image: url(check-circle.svg); 
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.todo-item-delete{
+    position: absolute;
+    top: -16px;
+    right: 24px;
+    background-image: url(x-circle.svg);
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
